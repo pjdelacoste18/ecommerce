@@ -1,0 +1,10 @@
+Situation: A new supplier has recently been added to the Sheesh-lingan supplier list, and their product inventory must be entered into the system database.
+
+Solution using Insert:
+
+To add the new supplier and their products to the database, the INSERT statement can be used.                                                                                                                                             INSERT INTO suppliers (supplier_name, supplier_address, supplier_contact)
+VALUES ('New Supplier', '420 Main Street', '123-4444');
+
+INSERT INTO products (product_name, supplier_id, price, quantity)
+VALUES ('Pork', LAST_INSERT_ID(), 20,000, 50),
+('Beef', LAST_INSERT_ID(), 25,000, 50);

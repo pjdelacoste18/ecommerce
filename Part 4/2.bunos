@@ -1,0 +1,2 @@
+Delete a product that is no longer being sold or has been discontinued. To accomplish this, you can use the DELETE SQL statement to remove the product information from the database.                                                                                                                                  DELETE FROM products
+WHERE product_id = [product_id];
